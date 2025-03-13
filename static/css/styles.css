@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    background-image: url('../back.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap; /* ছোট স্ক্রিনে এলিমেন্টগুলো নিচে নামবে */
+}
+
+.clock-container {
+    width: 300px;
+    height: 300px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    background-image: url('../clock.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.clock {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.hand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 50% 100%;
+    background-color: #e7e7e7;
+    border-radius: 10px;
+    transform: translate(-50%, -100%);
+}
+
+.hour-hand {
+    width: 6px;
+    height: 60px;
+}
+
+.min-hand {
+    width: 4px;
+    height: 90px;
+}
+
+.sec-hand {
+    width: 2px;
+    height: 100px;
+    background-color: red;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.round-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.left-images {
+    animation: moveDown 10s linear infinite;
+}
+
+.right-images {
+    animation: moveUp 10s linear infinite;
+}
+
+@keyframes moveDown {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(100%); }
+}
+
+@keyframes moveUp {
+    0% { transform: translateY(100%); }
+    100% { transform: translateY(-100%); }
+}
+
+/* মোবাইল ডিভাইসের জন্য স্টাইল */
+@media (max-width: 768px) {
+    .container {
+        gap: 20px;
+    }
+    
+    .clock-container {
+        width: 200px;
+        height: 200px;
+    }
+
+    .hour-hand {
+        width: 4px;
+        height: 40px;
+    }
+
+    .min-hand {
+        width: 3px;
+        height: 60px;
+    }
+
+    .sec-hand {
+        width: 2px;
+        height: 70px;
+    }
+
+    .round-image {
+        width: 40px;
+        height: 40px;
+    }
+
+    
+}
+
+/* ট্যাবলেট ডিভাইসের জন্য স্টাইল */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .clock-container {
+        width: 500px;
+        height: 500px;
+    }
+
+    .hour-hand {
+        width: 5px;
+        height: 50px;
+    }
+
+    .min-hand {
+        width: 4px;
+        height: 70px;
+    }
+
+    .sec-hand {
+        width: 2px;
+        height: 80px;
+    }
+
+    .round-image {
+        width: 50px;
+        height: 50px;
+    }
+}

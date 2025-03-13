@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="image-container left-images">
+            <img src="{{ url_for('static', filename='IMG.JPG') }}" alt="" class="round-image">
+            <img src="{{ url_for('static', filename='IMG_1.JPG') }}" alt="" class="round-image">
+            <img src="{{ url_for('static', filename='IMG_2.JPG') }}" alt="" class="round-image">
+            <img src="{{ url_for('static', filename='IMG_3.JPG') }}" alt="" class="round-image">
+            <img src="{{ url_for('static', filename='IMG_4.JPG') }}" alt="" class="round-image">
+            <img src="{{ url_for('static', filename='IMG_5.JPG') }}" alt="" class="round-image">
+            <img src="{{ url_for('static', filename='IMG.JPG') }}" alt="" class="round-image">
+            <img src="{{ url_for('static', filename='IMG_1.JPG') }}" alt="" class="round-image">
+            <img src="{{ url_for('static', filename='IMG_2.JPG') }}" alt="" class="round-image">
+            <img src="{{ url_for('static', filename='IMG_3.JPG') }}" alt="" class="round-image">
+            <img src="{{ url_for('static', filename='IMG_4.JPG') }}" alt="" class="round-image">
+            <img src="{{ url_for('static', filename='IMG_5.JPG') }}" alt="" class="round-image">
+        </div>
+
+        <div class="clock-container">
+            <div class="clock">
+                <div class="hand hour-hand"></div>
+                <div class="hand min-hand"></div>
+                <div class="hand sec-hand"></div>
+            </div>
+        </div>
+
+        <div class="image-container right-images">
+            <img src="{{ url_for('static', filename='IMG_3.JPG') }}" alt="" class="round-image">
+            <img src="{{ url_for('static', filename='IMG_4.JPG') }}" alt="" class="round-image">
+            <img src="{{ url_for('static', filename='IMG_5.JPG') }}" alt="" class="round-image">
+            <img src="{{ url_for('static', filename='IMG.JPG') }}" alt="" class="round-image">
+            <img src="{{ url_for('static', filename='IMG_1.JPG') }}" alt="" class="round-image">
+            <img src="{{ url_for('static', filename='IMG_2.JPG') }}" alt="" class="round-image">
+            <img src="{{ url_for('static', filename='IMG_3.JPG') }}" alt="" class="round-image">
+            <img src="{{ url_for('static', filename='IMG_4.JPG') }}" alt="" class="round-image">
+            <img src="{{ url_for('static', filename='IMG_5.JPG') }}" alt="" class="round-image">
+            <img src="{{ url_for('static', filename='IMG.JPG') }}" alt="" class="round-image">
+            <img src="{{ url_for('static', filename='IMG_1.JPG') }}" alt="" class="round-image">
+            <img src="{{ url_for('static', filename='IMG_2.JPG') }}" alt="" class="round-image">
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
